@@ -1,0 +1,47 @@
+import java.util.*; 
+  
+class Mostfequent { 
+      
+    static int mostFrequent(int arr[], int n) 
+    { 
+ 
+        Arrays.sort(arr); 
+
+        int max_count = 1, res = arr[0]; 
+        int curr_count = 1; 
+          
+        for (int i = 1; i < n; i++) 
+        { 
+            if (a[i] == a[i - 1]) 
+                curr_count++; 
+            else 
+            { 
+                if (curr_count > max_count) 
+                { 
+                    max_count = curr_count; 
+                    res = a[i - 1]; 
+                } 
+                curr_count = 1; 
+            } 
+        } 
+      
+        if (curr_count > max_count) 
+        { 
+            max_count = curr_count; 
+            res = arr[n - 1]; 
+        } 
+      
+        return max_count;
+    } 
+      
+    public static void main (String[] args) { 
+          
+        int n;
+        Scanner s = new Scanner(System.in);
+        n=10
+        int a[] = new int[n];
+        System.out.println("Enter elements of array:");
+        System.out.println(mostFrequent(arr,n)); 
+          
+    } 
+} 

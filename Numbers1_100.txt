@@ -1,0 +1,15 @@
+class Main {
+  public static void main(String[] args) {
+  
+int n=1;
+while(n>0)
+{
+  System .out.print(n);
+  n++;
+  if(n == 101)
+   {
+     break;
+   }
+}
+}
+}
