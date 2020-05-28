@@ -1,0 +1,21 @@
+class Main {
+  public static void main(String[] args) {
+    int age = Integer.parseInt(args[1]);
+    if(args[0].equals("Female") && (age>=1 && age<=58))
+    {
+      System.out.println("7.6%");
+    }
+    if(args[0].equals("Female") && (age>=59 && age<=120))
+    {
+      System.out.println("9.2%");
+    }
+    if(args[0].equals("Male") &&  (age>=1 && age<=60))
+    {
+      System.out.println("8.3%");
+    }
+    if(args[0].equals("Male") && (age>=61 && age<=120))
+    {
+      System.out.println("7.6%");
+    }
+  }
+}

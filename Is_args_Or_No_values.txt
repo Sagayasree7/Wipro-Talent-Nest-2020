@@ -1,0 +1,19 @@
+class Main {
+  public static void main(String[] args) {
+    int i=0;
+    if(args.length>0)
+    {
+      do{
+        System.out.print(args[i]);
+        i++;
+        if(i<args.length)
+        System.out.print(",");
+        
+      }while(i<args.length);
+    }
+    else
+    {
+      System.out.println("No Values");
+    }
+  }
+}
