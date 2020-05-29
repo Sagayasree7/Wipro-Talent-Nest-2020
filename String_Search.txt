@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String a = sc.next();
+    String b = sc.next();
+    int a_size = a.length();
+    int b_size = b.length();
+    int i,n=0;
+    for (i = 0; i < a_size - b_size + 1; i++) 
+    { 
+      if (a.substring(i, i + b_size).equals(b))
+      {
+        System.out.print(a.charAt(i-1));
+        System.out.print(a.charAt(i+b_size));
+        
+      }
+      
+    }
+  }
+}

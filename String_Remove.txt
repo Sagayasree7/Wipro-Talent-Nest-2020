@@ -1,0 +1,20 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    String a = sc.next();
+       
+    int i;
+    for(i=0;i<a.length();i++)
+    {
+      if(a.charAt(i) == '*')
+      {
+        System.out.print(a.substring(0,i-1) + a.substring(i+2));
+        break;
+      }
+      
+    }
+  }
+}

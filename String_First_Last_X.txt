@@ -1,0 +1,32 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    String a = sc.next();
+    
+    int i;
+    int size = a.length();
+    
+    if(a.charAt(0) == 'x' && a.charAt(size-1) == 'x' )
+    {
+      for(i=1;i<size-1;i++)
+      {
+        System.out.print(a.charAt(i));
+      }
+    }
+    else if(a.charAt(0) == 'X' && a.charAt(size-1) == 'X')
+    {
+      for(i=1;i<size-2;i++)
+      {
+        System.out.print(a.charAt(i));
+      }
+    }
+    else
+    {
+     System.out.println(a); 
+    }
+    
+  }
+}

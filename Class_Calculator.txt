@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+class Calculator
+{
+ static int powerInt(int num1, int num2)
+ {
+   int power = (int)Math.pow(num1,num2);
+   return power;
+ } 
+ static double powerDouble(double num1, double num2)
+ {
+   double power = Math.pow(num1,num2);
+   return power;
+ }
+}
+
+
+class Main {
+  public static void main(String[] args) {
+    
+    int a = Calculator.powerInt(2,3);
+    double b = Calculator.powerDouble(4,2);
+    System.out.println(a);
+    System.out.println(b);
+  }
+}

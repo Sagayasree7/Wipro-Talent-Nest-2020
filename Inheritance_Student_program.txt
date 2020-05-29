@@ -1,0 +1,34 @@
+class Person
+{
+ String name; 
+}
+
+class Student extends Person
+{
+String id;
+}
+class Teacher extends Person
+{
+  double salary;
+  String subject;
+
+}
+
+class CollegeStudent extends Student
+{
+String year,dept;
+}
+
+class Sample
+{
+  public static void main(String args[])
+  {
+    CollegeStudent clg = new CollegeStudent();
+    clg.id = "S1";
+    clg.year = "3rd";
+    clg.dept = "CSE";
+    System.out.println(clg.id);
+    System.out.println(clg.year);
+    System.out.println(clg.dept);
+  }
+}

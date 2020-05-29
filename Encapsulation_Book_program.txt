@@ -1,0 +1,71 @@
+class Author
+{
+  private String name, email;
+  private char gender;
+  Author()
+  {
+    name = "john";
+    email = "john@gmail.com";
+    gender = 'm';
+  }
+  String getName()
+  {
+    return name;
+  }
+  String getEmail()
+  {
+    return email;
+  }
+  char getGender()
+  {
+    return gender;
+  }
+}
+class Book
+{
+  private String name;
+  private Author author;
+  private double price;
+  private int qty;
+  Book()
+  {
+    name = "abook";
+  }
+  String getName()
+  {
+    return name;
+  }
+  void setPrice(double price)
+  {
+    this.price = price;
+  }
+  void setQty(int qty)
+  {
+    this.qty = qty;
+  }
+  double  getPrice()
+  {
+    return price;
+  }
+  int getQty()
+  {
+    return qty;
+  }
+}
+
+public class Display
+{
+  public static void main(String args[])
+  {
+    Book b = new Book();
+    Author a =new Author();
+    System.out.println(b.getName());
+    System.out.println(a.getName());
+    System.out.println(a.getEmail());
+    b.setPrice(150.00);
+    b.setQty(3);
+    System.out.println(a.getGender());
+    System.out.println(b.getPrice());
+    System.out.println(b.getQty());
+  }
+}

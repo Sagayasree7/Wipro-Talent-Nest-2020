@@ -1,0 +1,21 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    String a,b="";
+    a = sc.next();
+    int i;
+    for(i=0;i<a.length();i++)
+    {
+      b = b + a.charAt(i);
+    }
+    if(a.equalsIgnoreCase(b))
+    {
+      System.out.println("Palindrome");
+    }
+    else
+    {
+      System.out.println("Not Palindrome");
+    }
+  }
+}

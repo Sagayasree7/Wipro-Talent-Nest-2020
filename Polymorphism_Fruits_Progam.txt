@@ -1,0 +1,39 @@
+class Fruit
+{
+  String name,taste,size;
+  void eat(String name,String taste)
+  {
+    System.out.println(name);
+    System.out.println(taste);
+  }
+}
+
+class Apple extends Fruit
+{
+  void eat(String name,String taste)
+  {
+    System.out.println(name);
+    System.out.println(taste);
+  }
+}
+
+
+class Orange extends Fruit
+{
+  void eat(String name,String taste)
+  {
+    System.out.println(name);
+    System.out.println(taste);
+  }
+}
+
+class Sample
+{
+  public static void main(String args[])
+  {
+    Apple a = new Apple();
+    Orange o = new Orange();
+    a.eat("Apple","Sweet");
+    o.eat("Orange","Sour");
+  }
+}

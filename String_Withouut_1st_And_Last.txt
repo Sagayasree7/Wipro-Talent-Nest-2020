@@ -1,0 +1,19 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    String a = sc.next();
+    int i;
+    int size = a.length();
+    if(size > 2)
+    {
+      for(i=1;i<size-1;i++)
+      {
+        System.out.print(a.charAt(i));
+      }
+    }
+    
+  }
+}

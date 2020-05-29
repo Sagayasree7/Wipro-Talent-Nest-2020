@@ -1,0 +1,22 @@
+import java.util.*;
+class Main
+{
+  public static void main(String args[])
+  {
+    Scanner sc = new Scanner(System.in);
+    String a = sc.next();
+    String b = sc.next();
+    int i;
+    int a_size = a.length();
+    int b_size = b.length();
+    if(a_size > b_size && (a_size != 0 && b_size != 0))
+    {
+      System.out.println(b + a + b);
+    }
+    else
+    {
+     System.out.println(a + b + a); 
+    }
+    
+  }
+}
