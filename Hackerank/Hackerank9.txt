@@ -1,0 +1,121 @@
+1)
+class Result {
+    public static int maxXor(int lo, int hi, int k) {
+    int i,j;
+    int big=0;
+    int temp;
+    for (i=lo;i<hi;i++)
+    {
+        for (j=lo+1;j<=hi;j++)
+        {
+            temp = i^j;
+            if (temp<=k&&big<temp)
+            {
+                big=temp;
+            }
+        }
+    }
+    return big;
+
+    }
+
+}
+
+2)
+class Account implements OnlineAccount, Comparable<Account> {
+
+    int noOfRegularMovies, noOfExclusiveMovies;
+    String ownerName;
+
+  
+    Account (String oname,int nrm, int nem)
+    {
+        this.ownerName = oname;
+        this.noOfRegularMovies=nrm;
+        this.noOfExclusiveMovies=nem;
+    }
+
+   
+    public int monthlyCost() {
+            return basePrice + (noOfRegularMovies*regularMoviePrice) + (noOfExclusiveMovies*exclusiveMoviePrice);
+    }
+
+    @Override
+    public int compareTo(Account o) {
+        // TODO Auto-generated method stub
+        if (this.monthlyCost()>o.monthlyCost())
+        {
+            this.toString();
+            return 1;
+        }
+        else
+        {
+            o.toString ();
+            return -1;
+        }
+        
+    }
+    
+    
+    public String toString() {
+        String s = new String ();
+        s="Owner is " + ownerName + " and monthly cost is " + monthlyCost() + " USD.";
+        return s;
+
+    }
+}
+
+3)
+Car Inheritance - Hackerrank Solution
+
+class WagonR extends Car
+{
+    int mil;
+    public WagonR (int n)
+    {
+        super(false, "4");
+        this.mil=n;
+           
+    }
+    public String getMileage ()
+    {
+        String s = new String ();
+        s= mil + " kmpl";
+        return s;
+    }
+
+}
+
+
+class HondaCity extends Car
+{
+    int mil;
+    public HondaCity (int n)
+    {
+        super(true, "4");
+        mil=n;
+    }
+    public String getMileage ()
+    {
+        String s = new String ();
+        s= mil + " kmpl";
+        return s;
+    }
+}
+
+class InnovaCrysta extends Car
+{
+    int mil;
+    public InnovaCrysta (int n)
+    {
+        super(false,"6");
+        mil=n;
+    }
+    public String getMileage ()
+    {
+        String s = new String ();
+        s= mil + " kmpl";
+        return s;
+    }
+    
+}
